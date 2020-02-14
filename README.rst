@@ -113,9 +113,13 @@ Let's Encrypt certificate
    valid (ie. it can be resolved with a DNS query) and to match the
    server you're installing Modoboa on.
 
-If you want to generate a valid certificate using `Let's Encrypt
-<https://letsencrypt.org/>`_, edit the ``installer.cfg`` file and
-modify the following settings::
+If you want to generat a valid certificate using `Let's Encrypt
+<https://letsencrypt.org"`_, use the following at install time:
+
+  $ ./run.py --stop-after-configfile-check <your domain>
+
+The edit the ```installer.cfg`` file, and modify the following
+settings:
 
   [certificate]
   generate = true
